@@ -21,7 +21,7 @@ public class SpringTest {
 	@Autowired
 	private Singleton singleton;	
 	   
-    /*@Test
+    @Test
     public void testgetTimesTwo() {
     		int[] intArray = new int[] { 11, 12, 13, 20, 25, 30, 37, 41, 50, 62, 78 };
     		int[] result = exam.getTimesTwo(intArray);
@@ -29,7 +29,7 @@ public class SpringTest {
     		if(Arrays.equals(result, expected)) {
     			singleton.setGrade(1, "testgetTimesTwo");
     		}	
-    }*/
+    }
     
     @Test
     public void testcountUppercaseCharacters() {

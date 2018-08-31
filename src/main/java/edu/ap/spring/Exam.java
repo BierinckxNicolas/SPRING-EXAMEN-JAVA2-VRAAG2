@@ -15,22 +15,28 @@ public class Exam {
 	// Maak gebruik van lambdas en streams om een array met alle
 	// getallen terug te geven die deelbaar zijn door twee
 	// 2 punten
-/*	public int[] getTimesTwo(int[] numbers) {
-	}*/
+	public int[] getTimesTwo(int[] numbers) {
+
+	int[] list = Arrays.stream(numbers).filter(i -> i % 2 == 0).toArray();
+	return list;
+
+	}
 	
 	// Maak gebruik van lambdas en streams om alle uppercase characters
 	// te tellen in de gegeven string
 	// 1 punt
 	public int countUppercaseCharacters(String sentence) {
-		int count = Math.toIntExact(sentence.chars().filter(Character::isUpperCase)
-				.count());
+		int count = Math.toIntExact(sentence.chars().filter(Character::isUpperCase).count());
 		return count;
 	}
 	
 	// Maak gebruik van lambdas en streams om het aantal keren te tellen
 	// dat string s voorkomt (zowel uppercase als lowercase) in de lijst names
 	// 1 punt
-/*	public int countChar(List<String> names, String s) {
+	/*public int countChar(List<String> names, String s) {
+
+
+
 	}*/
 
 	// Maak gebruik van lambdas en streams om het hoogste Y coordinaat
